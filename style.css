@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+ body{
+    text-align: center;
+    background:linear-gradient(#eee,#ffff);
+ }
+
+ .container{
+    width: 100%;
+    height: 100vh;
+    padding: 1.5em;
+  
+ }
+
+
+  fieldset{
+    margin:10px auto;
+    width: 50%;
+    padding: 1.5em;
+    border-radius:15px;
+    border:1px solid black;
+ }
+
+ legend{
+    font-weight: bold;
+ }
+
+ label{
+    display:block;
+    margin: 15px; 
+ }
+
+ button{
+    padding: 10px;
+    color:black;
+ }
+

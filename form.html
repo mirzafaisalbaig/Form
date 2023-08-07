@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1>Let us build a form!</h1>
+        <fieldset>
+          <legend>Your contant information here</legend>
+          <label for="name"
+            >Your Name: <input type="text" id="name" name="name"
+          /></label>
+          <label for="email"
+            >Your Email: <input type="email" id="email" name="email" />
+          </label>
+          <label for="phone"
+            >Your Phone: <input type="tel" id="phone" name="phone"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>About your abduction</legend>
+          <label for="date"
+            >Requested date:
+            <input type="date" name="date" id="date" />
+          </label>
+          <label for="qty"
+            >How many people would you like abducted?
+            <input
+              type="number"
+              value="qty"
+              name="qty"
+              id="qty"
+              min="1"
+              max="10"
+            />
+          </label>
+          <label for="comments"
+            >Special request
+            <textarea
+              name="comments"
+              id="comments"
+              placeholder="tell me everything"
+            >
+            </textarea>
+          </label>
+
+          <label>What type of UFO do you prefer?</label>
+          <label for="radio1"
+            ><input checked type="radio" name="radio" id="radio1" />Classic oval
+            UFO</label
+          >
+          <label for="radio2"
+            ><input type="radio" name="radio" id="radio2" />Starwars-style
+            Imperial cruiser</label
+          >
+          <label for="radio3"
+            ><input type="radio" name="radio" id="radio3" />Battlestar
+            galactica-style Viper</label
+          >
+          <label for="abduction"
+            >What type of abduction experience do you want?</label
+          >
+          <select name="abduction" id="abduction">
+            <option selected>Select one...</option>
+            <option value="tour">Tour of the solar system</option>
+            <option value="dinner">Alein dinner and discussion</option>
+            <option value="dance">Alein dance lessons</option>
+
+            <option value="dance">whales watching</option>
+          </select>
+
+          <label for="special">
+            <input type="checkbox" name="subscribe" id="special" />Add me to
+            email
+          </label>
+        </fieldset>
+        <button type="submit">Order your abduction experience!!</button>
+      </form>
+    </div>
+    <script src="forms.js"></script>
+  </body>
+</html>
